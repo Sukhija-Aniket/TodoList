@@ -156,7 +156,6 @@ input.extended {
         display:none;
         width: 350px;
         position: absolute;
-        display: flex;
         justify-content:center;
 
     }
