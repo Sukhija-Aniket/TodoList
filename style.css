@@ -153,6 +153,7 @@ input.extended {
 
 @media screen and (max-width:900px) {
     .container{
+        display:none;
         width: 350px;
         position: absolute;
         display: flex;
@@ -163,6 +164,7 @@ input.extended {
 
 @media screen and (max-width:500px) {
     .container{
+        display: none;
         position: absolute;
         margin:auto;
         left: 0px;
@@ -183,7 +185,10 @@ input.extended {
     #dropdown{
         display: none;
     }
-}
+ 
+    #dropdown button{
+     display:none;
+    }
 
 @media screen and (max-width:500px){
     span.display{
