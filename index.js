@@ -197,25 +197,7 @@ list.addEventListener(
 );
 
 //  <-- This is neccessary to use the filter function -->
-var isimportant = false;
-function usefilter() {
-  var myNodelist = document.getElementsByTagName("LI");
-  var i;
-  if (isimportant === false) {
-    isimportant = true;
-    for (i = 0; i < myNodelist.length; i++) {
-      var getname = myNodelist[i].className;
-      if (!(getname.indexOf("important") > -1)) {
-        myNodelist[i].style.display = "none";
-      }
-    }
-  } else {
-    for (i = 0; i < myNodelist.length; i++) {
-      myNodelist[i].style.display = "block";
-    }
-    isimportant = false;
-  }
-}
+
 
 
 
