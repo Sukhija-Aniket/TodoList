@@ -28,7 +28,7 @@ docker build -t aniket98145/todolist:latest .
         DOCKER_PASS = 'Aniket13@'
       }
       steps {
-        sh 'docker login -u  $DOCKER_USER -p $DOCKER_PASS'
+        sh 'echo $PATH'
       }
     }
 
