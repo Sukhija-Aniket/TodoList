@@ -22,6 +22,11 @@ docker build -t aniket98145/todolist:latest .
     }
 
     stage('Login to Docker') {
+      agent any
+      environment {
+        DOCKER_USER = 'aniket98145'
+        DOCKER_PASS = 'Aniket13@'
+      }
       steps {
         sh 'docker login -u  $DOCKER_USER -p $DOCKER_PASS'
       }
