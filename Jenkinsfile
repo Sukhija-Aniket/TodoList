@@ -15,7 +15,7 @@ pipeline {
 
     stage('build') {
       steps {
-        sh 'docker buld -t aniket98145/Todolist:latest .'
+        sh 'docker build -t aniket98145/Todolist:latest .'
       }
     }
 
