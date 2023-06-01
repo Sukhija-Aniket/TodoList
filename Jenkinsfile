@@ -9,7 +9,8 @@ pipeline {
 
     stage('logs') {
       steps {
-        sh 'ls -la'
+        sh '''ls -la
+git log --oneline'''
       }
     }
 
@@ -40,7 +41,8 @@ docker build -t aniket98145/todolist:latest .
 
     stage('Docker run') {
       steps {
-        sh '''docker run -d -p 80:80 aniket98145/todolist:latest --name testingTodolist
+        sh '''docker run -d -p 80:80  --name todolistcontainer aniket98145/todolist
+ 
 echo "Ran Successfully"'''
       }
     }
