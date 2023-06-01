@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('build') {
+      steps {
+        sh 'docker buld -t aniket98145/Todolist:latest .'
+      }
+    }
+
   }
 }
