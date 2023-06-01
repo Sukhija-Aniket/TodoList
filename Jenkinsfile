@@ -41,8 +41,9 @@ docker build -t aniket98145/todolist:latest .
 
     stage('Docker run') {
       steps {
-        sh '''docker run -d -p 80:80  --name todolistcontainer aniket98145/todolist
- 
+        sh '''docker stop todolistcontainer
+docker rm  todolistcontainer
+docker run -d -p 80:80  --name todolistcontainer aniket98145/todolist
 echo "Ran Successfully"'''
       }
     }
