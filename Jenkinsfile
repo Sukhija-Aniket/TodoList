@@ -32,5 +32,11 @@ docker build -t aniket98145/todolist:latest .
       }
     }
 
+    stage('Docker Push') {
+      steps {
+        sh 'docker push aniket98145/todolist:latest '
+      }
+    }
+
   }
 }
