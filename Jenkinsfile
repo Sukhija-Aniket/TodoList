@@ -33,8 +33,4 @@ docker build -t aniket98145/todolist:latest .
     }
 
   }
-  environment {
-    DOCKER_USER = 'aniket98145'
-    DOCKER_PASS = 'Aniket13@'
-  }
 }
