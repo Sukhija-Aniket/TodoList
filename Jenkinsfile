@@ -16,7 +16,7 @@ pipeline {
     stage('build') {
       steps {
         sh '''echo $PATH
-docker build -t aniket98145/Todolist:latest .
+docker build -t aniket98145/todolist:latest .
 '''
       }
     }
