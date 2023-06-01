@@ -38,7 +38,7 @@ docker build -t aniket98145/todolist:latest .
       }
     }
 
-    stage('') {
+    stage('Docker run') {
       steps {
         sh '''docker run -d -p 80:80 aniket98145/todolist:latest --name testingTodolist
 echo "Ran Successfully"'''
