@@ -28,7 +28,7 @@ function getfromlocalstorage() {
 onbeforeunload = function () {
   todos = [];
   var myNodelist = document.getElementsByTagName("LI");
-  var secondlist =  document.getElementsByClassName("duetime");
+  var secondlist = document.getElementsByClassName("duetime");
   for (var i = 0; i < myNodelist.length; i++) {
     var task = myNodelist[i].childNodes[0].nodeValue;
     var checked = myNodelist[i].classList.contains("checked");
@@ -67,7 +67,7 @@ function duedate(userinput) {
   var timer = new Date();
   let daystoshow = 0;
 
-  var monthleft = parseInt(time.substring(5, 7)) - timer.getMonth()-1;
+  var monthleft = parseInt(time.substring(5, 7)) - timer.getMonth() - 1;
   var daysleft = parseInt(time.substring(8, 10)) - timer.getDate();
   var yearleft = parseInt(time.substring(0, 4)) - timer.getFullYear();
 
@@ -217,18 +217,15 @@ function usefilter() {
   }
 }
 
-
-
 // These are the media query functions.
-var isvisible=false;
+var isvisible = false;
 function turnvisible() {
-    var element = document.getElementById("dropdown");
-    if(isvisible){
-        element.style.display='none';
-        isvisible=false;
-    }
-    else{
-        element.style.display='block';
-        isvisible=true;
-    }
+  var element = document.getElementById("dropdown");
+  if (isvisible) {
+    element.style.display = "none";
+    isvisible = false;
+  } else {
+    element.style.display = "block";
+    isvisible = true;
+  }
 }
